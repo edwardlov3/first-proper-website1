@@ -2,25 +2,18 @@ body{
   margin: 0%;
 }
 
-nav{
-  background-color: red;
+/* header */
+header{
+  display: flex;
+  flex-direction: row;
+  background-color: aqua;
 }
 
-h1{
-  display: flex;
+header , h1{
   justify-content: center;
 }
 
-nav > ul{
-  display: flex;
-  justify-content: space-around;
-  padding: 5%;
 
-}
+/* main */
 
-nav > ul > li{
-  list-style: none;
-  /* margin: 5%; */
-  border: 1px solid black;
-  padding: 7%;
-}
+/* footer */
