@@ -7,13 +7,24 @@ header{
   display: flex;
   flex-direction: row;
   background-color: aqua;
+  align-items: center;
+  
 }
 
 header , h1{
   justify-content: center;
+  margin: 0;
 }
 
+header img{
+width: 100%;
+/* margin: auto; */
+/* float: right; */
+}
 
+div{
+  width: 15%;
+}
 /* main */
 
 /* footer */
