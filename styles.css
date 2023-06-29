@@ -3,28 +3,40 @@ body{
 }
 
 /* header */
-header{
-  display: flex;
-  flex-direction: row;
+.row{
   background-color: aqua;
+  display: flex;
   align-items: center;
-  
 }
 
-header , h1{
-  justify-content: center;
-  margin: 0;
+.img1{
+  width: 20%;
+}
+/* header img{
+  width: 100%;
+} */
+
+.title{
+  width: 79.5%;
+  display: inline-flex;
+  justify-content: space-around;
 }
 
-header img{
-width: 100%;
-/* margin: auto; */
-/* float: right; */
-}
 
-div{
-  width: 15%;
-}
 /* main */
 
 /* footer */
+footer{
+  position: fixed;
+  display: flex;
+  background-color: gray;
+  color: aliceblue;
+  bottom:0%;
+  width: 100%;
+  height: 10%;
+}
+footer div{
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 50%;
+}
