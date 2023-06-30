@@ -12,19 +12,33 @@ body{
 .img1{
   width: 20%;
 }
-/* header img{
-  width: 100%;
-} */
 
 .title{
-  width: 79.5%;
+  width: 60%;
   display: inline-flex;
   justify-content: space-around;
 }
 
 
 /* main */
+main{
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+main iframe{
+  margin: 5% 0% 0% 5%;
+  width: 700px;; 
+  height: 60%;
+  
+}
 
+.coordinates{
+  width: 20%;
+
+  padding-left: 20%;
+  margin-top: 15%;
+}
 /* footer */
 footer{
   position: fixed;

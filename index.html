@@ -8,16 +8,43 @@
 </head>
 
 <body>
-    
-<div class="row"> 
-    <img class="img1" src="picters\Political-World-Map-3360.jpg" alt="globe">
-    <div class="title">
-        <h1>my location</h1>
+<header>   
+    <div class="row"> 
+        <img class="img1" src="picters\Political-World-Map-3360.jpg" alt="globe">
+        <div class="title">
+            <h1>my location</h1>
+        </div>
     </div>
-</div>
+</header>
 
 <main>
-    <div></div>
+    <div class = "map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.83988614674!2d-0.26640190148074677!3d51.52873980519579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon!5e0!3m2!1sen!2suk!4v1688038558364!5m2!1sen!2suk" ></iframe>
+    </div>
+    <div class=" coordinates">
+        <p>Click the button to get your coordinates.</p>
+
+        <button onclick="getLocation()">Try It</button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        var x = document.getElementById("demo");
+        
+        function getLocation() {
+          if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+          } else { 
+            x.innerHTML = "Geolocation is not supported by this browser.";
+          }
+        }
+        
+        function showPosition(position) {
+          x.innerHTML = "Latitude: " + position.coords.latitude + 
+          "<br>Longitude: " + position.coords.longitude;
+        }
+        </script>
+    </div>
 </main>
 
 <footer>
